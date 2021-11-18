@@ -35,6 +35,7 @@ import DatePicker from "react-datepicker";
 import validator from 'validator'
 import { useDispatch, useSelector } from 'react-redux';
 import { loanCreate } from '../../actions/loanActions';
+import "react-datepicker/dist/react-datepicker.css";
 
 export default function UserForm() {
 

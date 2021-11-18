@@ -17,7 +17,7 @@ export const loanCreate = (name, address1,contact, email, loanAmount, startdate,
             type: LOAN_CREATE_BEGIN
         })
         const {data} = await axios.post(
-            'http://localhost:5000/api/loans/create',
+            'https://loan-management-backend.herokuapp.com/api/loans/create',
             {name, address1, contact, email, loanAmount, startdate, enddate,emi, scheme, id}
         )
         dispatch({
@@ -45,7 +45,7 @@ export const loanFetch = (id) => async (dispatch) =>{
         })
         
         const {data} = await axios.post(
-            'http://localhost:5000/api/loans',
+            'https://loan-management-backend.herokuapp.com/api/loans',
             {id}
         )
         console.log(data)

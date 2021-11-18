@@ -12,7 +12,7 @@ export const login = (tokenId) => async (dispatch) =>{
             type: USER_DATA_BEGIN
         })
         const {data} = await axios.post(
-            'http://localhost:5000/api/users',
+            'https://loan-management-backend.herokuapp.com/api/users',
             {tokenId}
         )
         dispatch({
