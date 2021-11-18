@@ -51,7 +51,7 @@ const responseGoogle = (response) => {
              marginLeft={["0","100px","70px"]}
              marginTop={"100px"}>
                 <GoogleLogin
-                    clientId="117146700284-4dldblq3fd9e4odrr6pm57s62kr26kjt.apps.googleusercontent.com"
+                    clientId="117146700284-7h2s05jo0sveqph0vjuodhukbgofqmq1.apps.googleusercontent.com"
                     buttonText="Login"
                     onSuccess={responseGoogle}
                     onFailure={responseGoogle}
